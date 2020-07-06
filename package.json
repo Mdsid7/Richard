@@ -1,0 +1,14 @@
+{
+  "name": "richard",
+  "version": "1.0.0",
+  "description": "Exam taking platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "Sudarshan Dodiya",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.5"
+  }
+}
