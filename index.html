@@ -12,21 +12,13 @@
 
   </head>
   <body>
-    <input type="button" onclick="updateDiv()" id="reload" />
+    <input type="button" onclick="updateDiv()" id="reload"/>
 
     <div id="QnA">
-      <script>
-$(document).ready(function(){
-setInterval(function(){
-      $("#editor").load(window.location.href + " #editor" );
-}, 3000);
-});
-</script>
 <!-- The idea here is to make the div editable, then save the content of div at interval of time, then render the saved html inside the div; -->
       <div id="editor" contenteditable="true">
-        <iframe id="html" src="answer.thml">
-          </iframe>
-
+        <h1>Hello \(E=mc^2\)</h1>
+        <p>Hello hi what is happening \( \frac{1}{2}\)</p>
       </div>
       <iframe id="PDF" src="ADA.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" title="PDF">
       </iframe>

@@ -2,7 +2,6 @@ function saveTextAsFile() {
     var textToWrite = document.getElementById('editor').innerHTML;
     var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
     var fileNameToSaveAs = "answer.html";
-
     var downloadLink = document.createElement("a");
     downloadLink.download = fileNameToSaveAs;
     downloadLink.innerHTML = "Download File";
@@ -16,7 +15,6 @@ function saveTextAsFile() {
         downloadLink.style.display = "none";
         document.body.appendChild(downloadLink);
     }
-
     downloadLink.click();
 }
 
