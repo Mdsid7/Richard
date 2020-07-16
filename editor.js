@@ -27,3 +27,17 @@ function destroyClickedElement(event) {
     // remove the link from the DOM
     document.body.removeChild(event.target);
 }
+
+function addchild() {
+    let text = document.getElementById('fname').value;
+    console.log(text);
+    let latex = document.createElement('span');
+    latex.innerHTML = text;
+    document.getElementById('editor').appendChild(latex);
+    $("#editor").load(" #editor *");
+}
+
+
+
+
+

@@ -16,12 +16,22 @@
 
     <div id="QnA">
 <!-- The idea here is to make the div editable, then save the content of div at interval of time, then render the saved html inside the div; -->
+      <form action="#">
+        <label for="fname">Enter Latex code:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        
+        <input type="submit" class="latex" value="Submit", onclick="addchild()">
+        <!-- <button type="button" class="latex" onclick="script()">Try it</button> -->
+      </form>
+
       <div id="editor" contenteditable="true">
         <h1>Hello \(E=mc^2\)</h1>
         <p>Hello hi what is happening \( \frac{1}{2}\)</p>
       </div>
+
       <iframe id="PDF" src="ADA.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" title="PDF">
       </iframe>
 </div>
+{% comment %} <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script> {% endcomment %}
 </body>
 </html>
